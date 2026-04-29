@@ -1,24 +1,25 @@
 # 🪖 HALM — Smart Safety Helmet
 
-AI-powered safety helmet for real-time hazard detection in industrial environments.
+**AI-Powered Helmet for Enhanced Worker Protection**
+
+Halm is an intelligent safety system designed to bridge the gap between traditional protective equipment and proactive industrial safety. By integrating Computer Vision and Kinematic Analysis into a single wearable platform, the system shifts safety management from reactive mitigation to real-time, preventative intervention.
 
 ---
 
 ## 🚀 Overview
 
-HALM (Hazard Alert & Lifecycle Monitoring) is an intelligent safety system designed to enhance worker protection in hazardous environments. The system integrates computer vision, IoT, and embedded systems to detect risks in real time and provide immediate alerts.
+The Halm project addresses the functional fragmentation found in current industrial safety solutions. It utilizes an edge-processing architecture (Raspberry Pi 5) to autonomously identify environmental hazards and detect worker falls, delivering instant situational awareness to a centralized dashboard.
 
-This project aims to reduce workplace accidents by enabling proactive hazard detection using AI.
+This project was developed as a Bachelor of Science graduation project in Computer Science at King Faisal University.
 
 ---
 
 ## 💡 Key Features
 
-* 🔍 **Real-time Hazard Detection** using YOLOv8 computer vision models
-* 📡 **IoT Integration** for continuous data transmission and monitoring
-* 📍 **GPS Tracking** for worker location awareness
-* ⚡ **Low-latency Processing** on embedded hardware (Raspberry Pi)
-* 🚨 **Instant Alerts** for detected risks
+* **Real-time Spatial Hazard Localization:** Uses an edge-optimized YOLOv8 model to identify pits, sharp tools, and unsafe areas.
+* **Smart Sense Kinematic Detection:** Employs a BNO085 IMU and dual-threshold algorithms for instantaneous fall detection.
+* **Centralized Data Analytics:** Fuses vision warnings and kinetic data into a unified dashboard for informed, rapid intervention.
+* **Instant Local Alerting:** Triggers a local LED warning on the helmet to immediately notify the worker of detected risks.
 
 ---
 
@@ -26,60 +27,39 @@ This project aims to reduce workplace accidents by enabling proactive hazard det
 
 * **AI / Computer Vision:** YOLOv8
 * **Programming:** Python
-* **Hardware:** Raspberry Pi
-* **IoT & Communication:** Sensors, GPS modules
-* **Tools:** OpenCV, Jupyter Notebook
-
----
-
-## 🏗️ System Architecture
-
-The system follows a multi-layer design:
-
-* **Perception Layer:** Captures real-time video using onboard camera
-* **Processing Layer:** Runs YOLOv8 model to detect hazards
-* **Communication Layer:** Sends alerts and data via IoT modules
-* **Application Layer:** Displays results and notifications
-
----
-
-## 📊 Project Goals
-
-* Improve industrial safety using AI-driven solutions
-* Reduce human error in hazard detection
-* Enable real-time monitoring and faster response
-
----
-
-## 👩‍💻 My Role
-
-* Designed and implemented the computer vision pipeline
-* Integrated YOLOv8 model for real-time detection
-* Worked on system architecture and IoT integration
-* Contributed to overall system design and development
+* **Edge Computing:** Raspberry Pi 5
+* **Dashboard:** React + Vite (Frontend) and Flask (Backend)
+* **Hardware Sensors:** BNO085 IMU and Garmin GPS
 
 ---
 
 ## 📂 Repository Structure
 
-```
-HALM/
-│── model/            # Trained YOLOv8 model
-│── report/             # Documentation
-│── README.md
-```
+* **Halm_Website/backend:** Contains the Flask API, trained YOLOv8 model weights (`best.pt`), and the system database
+* **Halm_Website/src:** Contains the React frontend source code for the monitoring dashboard
+* **model:** Includes development notebooks and AI model scripts
+* **README.md:** Project documentation and overview
 
 ---
 
-## 📈 Future Improvements
+## 🎓 Project Context
 
-* Deploy on more efficient edge devices
-* Improve detection accuracy with larger datasets
-* Integrate mobile/web dashboard for monitoring
-* Add more hazard classes and real-world testing
+This system was developed as a Graduation Project in partial fulfillment of the requirements for the degree of Bachelor of Science in Computer Science at King Faisal University.
+
+**Students:**
+
+* Hissah Almuhaysh
+* Latifah Alhafith
+* Rana Althafar
+* Ftoon Althafar
 
 ---
 
-## 🏆 Project Context
+## 🌟 Acknowledgments
 
-This project is my **Graduation Project** in Computer Science and focuses on applying AI and IoT for real-world safety challenges.
+* **Supervised by:** Dr. Hala Hamdun
+* **Committee Members:** Dr. Rawabi Alsedais
+
+Special thanks to our families and mentors for their unwavering encouragement throughout this research process.
+
+
